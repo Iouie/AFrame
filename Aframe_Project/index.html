@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Frame</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/thedart76/aframe-blink-teleportation/master/js/aframe-blink-teleportation-min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
+    <script src="https://rawgit.com/rdub80/aframe-gui/master/dist/aframe-gui.min.js"></script>
+    <script src="js/finalText.js"></script>
+    	<!-- SUGGESTED FOR FLAT OBJECTS -->
+	<script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+</head>
+<body>
+    
+    <a-scene>
+        
+        <!-- Asset Management System -->
+        <a-assets>
+            <img id="trebuchetJpeg" src="Assets/jpegs/trebuchet.png">
+            <img id="dinosaurJpeg" src="Assets/jpegs/dinosaur.png">
+            <img id="bearJpeg" src="Assets/jpegs/bear.png">
+            <img id="snowglobeJpeg" src="Assets/jpegs/snowglobe.png">
+            <img id="doraemonJpeg" src="Assets/jpegs/doraemon.png">
+            <img id="bananaJpeg" src="Assets/jpegs/banana.jpg">
+            <a-asset-item id="village" src="Assets/Environment/scene.gltf"></a-asset-item>
+            <a-asset-item id="wizard" src="Assets/Wizard/wizard.gltf"></a-asset-item>
+            <a-asset-item id="trebuchet" src="Assets/trebuchet/trebuchet.gltf"></a-asset-item>
+            <a-asset-item id="dinosaur" src="Assets/dinosaur/dinosaur.gltf"></a-asset-item>
+            <a-asset-item id="teddybear" src="Assets/teddybear/teddybear.gltf"></a-asset-item>
+            <a-asset-item id="snowglobe" src="Assets/snowglobe/snowglobe.gltf"></a-asset-item>
+            <a-asset-item id="doraemon" src="Assets/doraemon/doraemon.gltf"></a-asset-item>
+            <a-asset-item id="banana" src="Assets/banana/banana.gltf"></a-asset-item>
+            <audio id="ding" src="sound/ding.mp3"></audio>
+            <audio id="harmony" src="sound/Harmony.mp3"></audio>
+            <img id="footsteps" src="Assets/footsteps.png">
+            <img id="water" src="Assets/water.jpeg">
+        </a-assets>
+        
+
+                <!-- BG Music-->
+                <a-entity sound="src: #harmony"></a-entity>
+
+                		<!-- TELEPORTATION AROUND THE ENTIRE MAP -->
+		<a-image src="#footsteps" position="-3 1 30" look-at="#cam" class="clickable"
+        blink-teleportation="pos: -3 1.6 30; hide: false">
+</a-image>
+
+<a-image src="#footsteps" position="20 1 30" look-at="#cam" class="clickable"
+blink-teleportation="pos: 20 1.6 30; hide: false">
+</a-image>
+
+<a-image src="#footsteps" position="20 1 7" look-at="#cam" class="clickable"
+blink-teleportation="pos: 20 1.6 7; hide: false">
+</a-image>
+
+<a-image src="#footsteps" position="20 1 -3" look-at="#cam" class="clickable"
+blink-teleportation="pos: 20 1.6 -3; hide: false">
+</a-image>
+
+<a-image src="#footsteps" position="40 1 -10" look-at="#cam" class="clickable"
+blink-teleportation="pos: 40 1.6 -10; hide: false">
+</a-image>
+
+<!-- Middle Road -->
+
+<a-image src="#footsteps" position="-3 1 10" look-at="#cam" class="clickable"
+blink-teleportation="pos: -3 1.6 10; hide: false">
+</a-image>
+
+<a-image src="#footsteps" position="-5 1 -6" look-at="#cam" class="clickable"
+blink-teleportation="pos: -5 1.6 -6; hide: false">
+</a-image>
+
+<!-- Middle Road to Right -->
+<a-image src="#footsteps" position="10 1 -20" look-at="#cam" class="clickable"
+blink-teleportation="pos: 10 1.6 -20; hide: false">
+</a-image>
+<a-image src="#footsteps" position="10 1 -20" look-at="#cam" class="clickable"
+blink-teleportation="pos: 10 1.6 -20; hide: false">
+</a-image>
+
+<a-image src="#footsteps" position="16 1 -50" look-at="#cam" class="clickable"
+blink-teleportation="pos: 16 1.6 -50; hide: false">
+</a-image>
+<a-image src="#footsteps" position="-10 1 -50" look-at="#cam" class="clickable"
+blink-teleportation="pos: -10 1.6 -50; hide: false">
+</a-image>
+
+<!-- Up The Grass-->
+<a-image src="#footsteps" position="-35 24 -33" look-at="#cam" class="clickable"
+blink-teleportation="pos: -35 24 -33; hide: false">
+</a-image>
+
+<!-- Middle Road to Left-->
+
+<a-image src="#footsteps" position="-18 1 -4" look-at="#cam" class="clickable"
+blink-teleportation="pos: -18 1.6 -4; hide: false">
+</a-image>
+<a-image src="#footsteps" position="-20 1 13" look-at="#cam" class="clickable"
+blink-teleportation="pos: -20 1.6 13; hide: false">
+</a-image>
+<a-image src="#footsteps" position="-25 1 26" look-at="#cam" class="clickable"
+blink-teleportation="pos: -25 1.6 25; hide: false">
+</a-image>
+
+<!-- On the Tower-->
+<a-image src="#footsteps" position="-29 24 -9" look-at="#cam" class="clickable"
+blink-teleportation="pos: -29 24 -9; hide: false">
+</a-image>
+
+  <!--Text-->
+  <a-entity id="wizardText" text="value: Help me find my missing items traveler.;" position=".5 4 45" scale="4 4 4" rotation='0 -30 0' visible="false" ></a-entity>
+  <a-entity id="finalText" text="value: You have found all the hidden objects!" position="100 300 -50" scale="1000 1000 1000" rotation="90 0 0" visible="false"></a-entity>
+
+
+       <!--Camera Rig -->
+<a-entity id="camRig" position="-3 2 50">
+   <!-- CAMERA -->
+   <a-camera id="cam" wasd-controls-enabled="false">
+       <!-- GUI on Camera -->
+       <a-image id="tile1" class="tile" position="-.5 -.7 -1" src="#trebuchetJpeg" width=".1" height=".1"></a-image>
+<a-image id="tile2" class="tile" position="-.3 -.7 -1" src="#dinosaurJpeg" width=".1" height=".1"></a-image>
+<a-image id="tile3" class="tile" position="-.1 -.7 -1" src="#bearJpeg" width=".1" height=".1"></a-image>
+<a-image id="tile4" class="tile" position=".1 -.7 -1" src="#snowglobeJpeg" width=".1" height=".1"></a-image>
+<a-image id="tile5" class="tile" position=".3 -.7 -1" src="#doraemonJpeg" width=".1" height=".1"></a-image>
+<a-image id="tile6" class="tile" position=".5 -.7 -1" src="#bananaJpeg" width=".1" height=".1"></a-image>
+
+       <a-cursor></a-cursor>
+   </a-camera>
+</a-entity>
+
+<!-- GROUND  -->
+<a-plane src="#water" shader="flat" rotation="-90 0 0" scale="500 500 500" position="0 -1 0"></a-plane>
+
+        <!-- Sky -->
+        <a-sky color="#6EBAA7"></a-sky>
+
+
+        <!-- Castle Village -->
+        <a-entity gltf-model="#village" sound="src: url(sound/Harmony.mp3); autoplay: true; loop: true"></a-entity>
+
+    
+        <!--Wizard @ Entrance-->
+        <a-entity gltf-model="#wizard" position="0 2 45" scale=".5 .5 .5" rotation="0 -30 0"
+        event-set__wizardhover="_event: mouseenter; _target: #wizardText; visible: true"
+        event-set__wizardleave="_event: mouseleave; _target: #wizardText; visible: false"></a-entity>
+
+        <!-- Hidden Objects -->
+        <a-entity event-set__clicked="_event: click; _target: #tile1; visible: false"
+        event-set__clicked2="_event: click; visible: false" gltf-model="#trebuchet" position = "-5 3 -27" scale=".009 .009 .009" rotation="0 -45 0" sound="src: #ding; on: click"> </a-entity>
+
+        <a-entity event-set__clicked="_event: click; _target: #tile2; visible: false" 
+        event-set__clicked2="_event: click; visible: false" gltf-model="#dinosaur" position = "-37 12 20" scale=".3 .3 .3" rotation="0 0 0" sound="src: #ding; on: click"></a-entity>
+
+        <a-entity event-set__clicked="_event: click; _target: #tile3; visible: false"
+        event-set__clicked2="_event: click; visible: false" gltf-model="#teddybear" position = "40 2.6 9" scale=".01 .01 .01" sound="src: #ding; on: click"></a-entity>
+
+        <a-entity event-set__clicked="_event: click; _target: #tile4; visible: false" 
+        event-set__clicked2="_event: click; visible: false" gltf-model="#snowglobe" position = "-32 27.3 -26" scale= ".003 .003 .003" rotation = "0 0 0" sound="src: #ding; on: click"></a-entity>
+
+        <a-entity event-set__clicked="_event: click; _target: #tile5; visible: false" 
+        event-set__clicked2="_event: click; visible: false" gltf-model="#doraemon" position = "-25 0 -10" scale=".1 .1 .1" rotation="0 -90 0" sound="src: #ding; on: click"> </a-entity>
+
+        <a-entity event-set__clicked="_event: click; _target: #tile6; visible: false"
+        event-set__clicked2="_event: click; visible: false" gltf-model="#banana" position = "30 2 -30" scale=".01 .01 .01" sound="src: #ding; on: click"></a-entity>
+    
+        <a-entity finished></a-entity>
+    </a-scene>
+
+</body>
+</html>
