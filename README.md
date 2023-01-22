@@ -4,7 +4,7 @@ A simple aframe game.
 
 ## Description
 
-Users are spanwed into a town and tasked to find hidden objects around town. Player may click on footstep icon to traverse through town and click on the hidden objects to find them.
+Users are spawned into a town and tasked to find hidden objects around town. Player may click on footstep icon to traverse through town and click on the hidden objects to find them.
 
 ## Getting Started
 
