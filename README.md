@@ -22,5 +22,5 @@ Stanley Louie
 ## Technology Used
 
 JavaScript
-Aframe (AR Framework for JavaScript
+Aframe (AR Framework for JavaScript)
 
